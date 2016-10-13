@@ -4,7 +4,7 @@ int rollScore;
 void setup()
 {
   size(500,500);
-  background(255);
+  background(0);
   noLoop();
 }
 void draw()
@@ -27,7 +27,6 @@ void draw()
 void mousePressed()
 {
     redraw();
-    background(0);
     total = 0;
     
 }
