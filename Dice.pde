@@ -5,6 +5,7 @@ void setup()
 {
   size(500,500);
   noLoop();
+  background(0)
 }
 void draw()
 
@@ -27,7 +28,6 @@ void mousePressed()
 {
     redraw();
     total = 0;
-    
 }
 class Die 
 {
