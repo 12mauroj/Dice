@@ -1,11 +1,11 @@
 Die one;
 int total;
-int rollScore;
+  int rollScore;
 void setup()
 {
   size(500,500);
+  background(0);
   noLoop();
-  background(0)
 }
 void draw()
 
@@ -19,15 +19,20 @@ void draw()
       one.roll();
       total = rollScore + total; 
       one.show(); 
+   
       }
+   
    }
     textSize(30); 
+       
     text("total=" + total,200,50);
 }
 void mousePressed()
 {
     redraw();
+    background(0);
     total = 0;
+    
 }
 class Die 
 {
@@ -37,10 +42,12 @@ class Die
   {
     myX = x;
     myY = y;
+    
   }
   void roll()
   {
-    rollScore = (int)((Math.random()*6) + 1);       
+    rollScore = (int)((Math.random()*6) + 1);
+       
   }
   void show()
   {
